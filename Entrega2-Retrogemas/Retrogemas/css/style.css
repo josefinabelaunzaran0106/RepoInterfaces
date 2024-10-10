@@ -28,463 +28,7 @@ body {
     --acentonuevo: #6700dd;
     --error: #f50606;
 }
-/* Pagina Index */
 
-.register{
-    background-image: url(../asset/images/fondo.png);
-    background-size:cover;
-    width: 1440px;
-    height: 832px;
-    display: flex;
-    padding-top: 5%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    border: 2px;
-}
-
-.register-container{
-    width: 500px;
-    height: 600px; 
-    display: flex;
-    background-color:#261818;
-    flex-direction: column;
-    align-items:flex-end;
-    justify-content: center;
-    align-items: center;
-}
-
-.retrogema-logo{
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    justify-content:center;
-    padding-left:32px;
-    padding-bottom: 30px;   
-}
-
-.button-register-container {
-    display: flex;
-    flex-direction: column;
-}
-.tituloRegister {
-    width: 299px;
-    height: 24px;
-    display: flex;
-    font-family: Roboto;
-    align-items: center;
-    margin-bottom: 0em;
-    padding-bottom: 2px;
-}
-
-.login{
-    display: inline-block;
-    text-align: center;
-    font-size: 13px;
-    font-family: Roboto;
-    padding-bottom: 0.4em;
-    align-items: center;
-    text-justify: center;
-    padding-bottom: 5%;
-}
-.textoblanco{
-    color: white;
-    padding-bottom: 2%;
-   
-}
-.btn-google-face, .btn-registrate-inisesion {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-}
-
-.btn-registrate-container button {
-    width: 345px;
-    height: 54px;
-    background-color:#E63946;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: normal;
-    margin-bottom: 1.5em;
-    color: #000;
-}
-
-.btn-google-container button {
-    width: 345px;
-    height: 54px;
-    background-color: var(--blanco);
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-size: 2 rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 1.5em;
-}
-
-.btn-google-container button a{
-    color: black;
-}
-.btn-facebook-container img {
-    margin-right: 0.5em;
-}
-.facebook{
-    size: 20px;
-}
-.btn-facebook-container button {
-    background-color: #0D85F5;
-    border: 0;
-    border-radius: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Roboto;
-    padding-top: 2%;
-}
-.btn-facebook-container button a {
-    text-decoration: none;
-    color: var(--blanco);
-    font-size: 20px;
-}
-.lineaBtnGoogleFace {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 1em 0;
-    margin-top: 1.5em;
-}
-.lineaBtnGoogleFace p{
-    display: inline;
-    color: var(--blanco);
-    font-size: 0.75em;
-    margin: 0 1em;
-}
-
-.linea2 {
-    width: 155px;
-    height: 1.94px;
-    background-color: var(--blanco);  
-    
-}
-
-.btn-inisesion-container {
-   padding-bottom: 2%; 
-}
-.btn-registrate-container button, .btn-inisesion-container button {
-    width: 345px;
-    height: 54px;
-    background-color:#E63946;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: normal;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: #000;
-}
-.btn-inisesion-container button:hover, .btn-registrate-container button:hover {
-    background-color: #A12831;
-    width: 345px;
-    height: 54px;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: normal;
-   
-    color: #000;
-  }
-
-.imgIconos {
-    padding-right: 10px;
-    height: 30px;
-    width: 40px;
-}
-/* iniciar sesion */
-.inicio-container{
-    width: 1440px;
-    height: 700px;
-    display: flex;
-    background-image: url(../asset/images/fondo.png);
-    background-size:cover;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.form-inicio-container{
-    width: 500px;
-    height: 521px;
-    padding: 5%;
-    display: flex;
-    justify-content:center;
-    background-color:#261818;
-    flex-direction: column;
-    align-items:center;
-}
-
-.form-inicio{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1em;
-    width: 400px;
-    height: 300px;
-    background-color: #746464;
-    border-radius: 2%;
-    padding: 2%;
-    margin-top: 2px;
-}
-.form-inicio label{
-    color:#000;
-}
-
-.retrogema-logo-inicio{
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    justify-content:center;
-    padding-bottom: 30px;   
-}
-
-.inputForm {
-    margin-top: 0em;
-    width: 370px;
-    height: 54px;
-    border-radius: 1em;
-    background-color: white;
-    border: 1px solid var(--blanco-oscuro);
-    border-radius: 0.5rem;
-    font-family: Roboto;
-    color: var(--gris);
-    margin-bottom: 1em;
-    padding: 0.7em;
-    margin-bottom: 0.8em;
-}
-
-.btn-inises-container button {
-    width: 370px;
-    height: 54px;
-    background-color:#E63946;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: normal;
-    margin-bottom: 1.5em;
-    color: #000;
-
-}
-.btn-inises-container button:hover {
-    background-color: #A12831;
-    width: 370px;
-    height: 54px;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: normal;
-    margin-bottom: 1.5em;
-    color: #1E1E1E;
-  }
-.olvidasteContraseña{
-    text-decoration: underline;
-}
-
-
-/*formulario Registro */
-
-.registro{
-    background-image: url(../asset/images/fondo-registro.png);
-    background-size:contain;
-    width: auto;
-    height: 1161px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.registro-container{
-    background-color:#261818;
-    width: 700px;
-    height: 950px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-.formularioRegistro{
-    background-color: #746464;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    width: 389px;
-    height: 650px;
-    padding-left: 10px;
-  }
-  .tituloRegistrate{
-    display: flex;
-    flex-direction: column;
-    width: 389px;
-    padding-left: 10px;
-    align-items:initial;
-    padding-bottom: 10px;
-  }
-  .tituloRegistrate h3{
-  display: flex;
-  padding-bottom: 20px;
-  font-size: 25px;
-}
-  #fname {
-    width: 175px;
-    height: 40px;
-    margin-right: 20px;
-    padding-right: 50px;
-
-  }
-  .fname{
-    width: 175px;
-    height: 40px;
-    margin-right: 132px;
-    margin-top: 10px;
-  }
- 
-  #lname{
-    width: 175px;
-    height: 40px;
-  }
-
-  .flastname{
-   padding-bottom: 10px; 
-  }
-  #nickname, #contraseña, #repetircontraseña{
-    width: 370px;
-    height: 40px;
-  }
-  .espacioInput{
-    padding-bottom: 10px;
-  }
-  .edad{
-    width: 73px;
-    height: 40px;
-    margin-right: 45px;
-  }
- #edad{
-    width: 73px;
-    margin-right: 20px;
-    height: 40px;
-  }
-  #mail{
-    width: 278px;
-    height: 40px;
-  }
-  .obligatorio{
-    text-align: left;
-    color:#FB2020;
-    font-size: 18px;
-  }
-  .btn-captcha-container{
-    width: 270px;
-    height:40px;
-    border-radius: 0.125rem;
-    border: 1px solid var(--gris, #000000);
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin-left: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.rectanguloCaptcha{
-    width: 1.50em;
-    height:1.50em;
-    border: 1px solid #000000;
-    margin-left: 2em;
-    margin-right: 1em;
-}
-.icoerrorhidden {
-    display: none;
-}
-.img-captcha {
-    margin-left: 1em;
-    margin-top: 2px;
-}
-.texto {
-    color: white;
-    font-size: robotic;
-}
-.diverror {
-    background-color: red;
-}
-.btn-registro-container button{
-    background-color:#E63946;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: normal;
-    margin-bottom: 1.5em;
-    color: #000;
-    width: 370px;
-    height: 54px;
-    border-radius: 1em;
-}
-.btn-registro-container button:hover{
-background-color: #A12831;
-    width: 370px;
-    height: 54px;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Roboto;
-    font-style: normal;
-    line-height: normal;
-    margin-bottom: 1.5em;
-    color: #000;
-}
-.retrogema-logo-registrate{
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    justify-content:center;
-    padding-left:8px;
-    padding-bottom: 30px;   
-}
 /*home*/
 button {
     background-color: #E63946;
@@ -2963,17 +2507,11 @@ button {
     width: 25em;
     height: 2.5em;
     text-align: center;
-    margin-top: 2em;
-    padding: 0.50em;
     border-radius: 2em;
+    color: #000;
    
 }
-.registroexitosoflex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+
 .pulse{
   animation: pulse 1.5s;
   box-shadow: 0 0 0 2em transparent;
@@ -3109,4 +2647,461 @@ button {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+/* Pagina Index */
+
+.register{
+    background-image: url(../asset/images/fondo.png);
+    background-size:cover;
+    width: 1440px;
+    height: 832px;
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 2px;
+}
+
+.register-container{
+    width: 500px;
+    height: 600px; 
+    display: flex;
+    background-color:#261818;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.retrogema-logo{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content:center;
+    padding-left:32px;
+    padding-bottom: 30px;   
+}
+
+.button-register-container {
+    display: flex;
+    flex-direction: column;
+}
+.tituloRegister {
+    width: 299px;
+    height: 24px;
+    display: flex;
+    font-family: Roboto;
+    align-items: center;
+    margin-bottom: 0em;
+    padding-bottom: 2px;
+}
+
+.login{
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    font-family: Roboto;
+    padding-bottom: 0.4em;
+    align-items: center;
+    text-justify: center;
+    padding-bottom: 5%;
+}
+.textoblanco{
+    color: white;
+    padding-bottom: 2%;
+   
+}
+.btn-google-face, .btn-registrate-inisesion {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.btn-registrate-container button {
+    width: 345px;
+    height: 54px;
+    background-color:#E63946;
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 1.5em;
+    color: #000;
+}
+
+.btn-google-container button {
+    width: 345px;
+    height: 54px;
+    background-color: var(--blanco);
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 2 rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.5em;
+}
+
+.btn-google-container button a{
+    color: black;
+}
+.btn-facebook-container img {
+    margin-right: 0.5em;
+}
+.facebook{
+    size: 20px;
+}
+.btn-facebook-container button {
+    background-color: #0D85F5;
+    border: 0;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    padding-top: 2%;
+}
+.btn-facebook-container button a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 20px;
+}
+.lineaBtnGoogleFace {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    margin-top: 1.5em;
+}
+.lineaBtnGoogleFace p{
+    display: inline;
+    color: var(--blanco);
+    font-size: 0.75em;
+    margin: 0 1em;
+}
+
+.linea2 {
+    width: 155px;
+    height: 1.94px;
+    background-color: var(--blanco);  
+    
+}
+
+
+.btn-registrate-container button, .btn-inisesion-container button {
+    width: 345px;
+    height: 54px;
+    background-color:#E63946;
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #000;
+}
+.btn-inisesion-container button:hover, .btn-registrate-container button:hover {
+    background-color: #A12831;
+    width: 345px;
+    height: 54px;
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    color: #000;
+  }
+
+.imgIconos {
+    padding-right: 10px;
+    height: 30px;
+    width: 40px;
+}
+/* iniciar sesion */
+.inicio-container{
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    background-image: url(../asset/images/fondo.png);
+    background-size:cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-inicio-container{
+    width: 500px;
+    height: 521px;
+    padding: 5%;
+    display: flex;
+    justify-content:center;
+    background-color:#261818;
+    flex-direction: column;
+    align-items:center;
+}
+
+.form-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    margin-left: 1em;
+    width: 400px;
+    height: 300px;
+    background-color: #746464;
+    border-radius: 2%;
+    padding: 4%;
+    margin-top: 2px;
+}
+.form-inicio label{
+    color:#000;
+}
+
+.retrogema-logo-inicio{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content:center;
+    padding-bottom: 30px;   
+}
+
+.inputForm {
+    margin-top: 0em;
+    width: 370px;
+    height: 54px;
+    border-radius: 1em;
+    background-color: white;
+    border: 1px solid var(--blanco-oscuro);
+    border-radius: 0.5rem;
+    font-family: Roboto;
+    color: var(--gris);
+    margin-bottom: 1em;
+    padding: 0.7em;
+    margin-bottom: 0.8em;
+}
+
+.btn-inises-container button {
+    width: 370px;
+    height: 44px;
+    background-color:#E63946;
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+    color: #000;
+
+}
+.btn-inises-container button:hover {
+    background-color: #A12831;
+    width: 370px;
+    height: 44px;
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+    color: #000;
+  }
+.olvidasteContraseña{
+    text-decoration: underline;
+    color: #000;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*formulario Registro */
+
+.registro{
+    background-image: url(../asset/images/fondo-registro.png);
+    background-size:contain;
+    width: auto;
+    height: 1161px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.registro-container{
+    background-color:#261818;
+    width: 700px;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.formularioRegistro{
+    background-color: #746464;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 389px;
+    height: 650px;
+    padding-left: 10px;
+  }
+  .tituloRegistrate{
+    display: flex;
+    flex-direction: column;
+    width: 389px;
+    padding-left: 10px;
+    align-items:initial;
+    padding-bottom: 10px;
+  }
+  .tituloRegistrate h3{
+  display: flex;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+  #fname {
+    width: 175px;
+    height: 40px;
+    margin-right: 20px;
+    padding-right: 50px;
+
+  }
+  .fname{
+    width: 175px;
+    height: 40px;
+    margin-right: 132px;
+    margin-top: 10px;
+  }
+ 
+  #lname{
+    width: 175px;
+    height: 40px;
+  }
+
+  .flastname{
+   padding-bottom: 10px; 
+  }
+  #nickname, #contraseña, #repetircontraseña{
+    width: 370px;
+    height: 40px;
+  }
+  .espacioInput{
+    padding-bottom: 10px;
+  }
+  .edad{
+    width: 73px;
+    height: 40px;
+    margin-right: 45px;
+  }
+ #edad{
+    width: 73px;
+    margin-right: 20px;
+    height: 40px;
+  }
+  #mail{
+    width: 278px;
+    height: 40px;
+  }
+  .obligatorio{
+    text-align: left;
+    color:#FB2020;
+    font-size: 18px;
+  }
+  .btn-captcha-container{
+    width: 270px;
+    height:40px;
+    border-radius: 0.125rem;
+    border: 1px solid var(--gris, #000000);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.rectanguloCaptcha{
+    width: 1.50em;
+    height:1.50em;
+    border: 1px solid #000000;
+    margin-left: 2em;
+    margin-right: 1em;
+}
+.icoerrorhidden {
+    display: none;
+}
+.registroexitoso p {
+    color: black;
+}
+.img-captcha {
+    margin-left: 1em;
+    margin-top: 2px;
+}
+.texto {
+    color: white;
+    font-size: robotic;
+}
+.diverror {
+    background-color: red;
+}
+.btn-registro-container button{
+    background-color:#E63946;
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 1.5em;
+    color: #000;
+    width: 370px;
+    height: 54px;
+    border-radius: 1em;
+}
+.btn-registro-container button:hover{
+background-color: #A12831;
+    width: 370px;
+    height: 54px;
+    border-radius: 1em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 1.5em;
+    color: #000;
+}
+.retrogema-logo-registrate{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content:center;
+    padding-left:8px;
+    padding-bottom: 30px;   
 }
