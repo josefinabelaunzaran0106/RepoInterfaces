@@ -2797,26 +2797,25 @@ button {
 .btn-registrate-container button, .btn-inisesion-container button {
     width: 345px;
     height: 54px;
-    background-color:#E63946;
+    background-color: #E63946;
     border-radius: 1em;
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    color: #000;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave por defecto */
+    cursor: pointer;
 }
 .btn-inisesion-container button:hover, .btn-registrate-container button:hover {
-    background-color: #A12831;
-    width: 345px;
-    height: 54px;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: normal;
-    color: #000;
+    background-color: #D62839; /* Cambia a un rojo un poco más oscuro */
+    color: #FFFBEA; /* Cambia el color del texto ligeramente */
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente al hacer hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
   }
 
 .imgIconos {
@@ -2874,7 +2873,6 @@ button {
 .inputForm {
     margin-top: 0em;
     width: 370px;
-    height: 54px;
     border-radius: 1em;
     background-color: white;
     border: 1px solid var(--blanco-oscuro);
@@ -2899,7 +2897,7 @@ button {
     font-style: normal;
     font-size: 15px;
     margin-bottom: 1.5em;
-    color: #000;
+    color: var(--blanco);
 
 }
 .btn-inises-container button:hover {
@@ -2912,9 +2910,9 @@ button {
     align-items: center;
     justify-content: center;
     font-family: Roboto;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 1.5em;
-    color: #000;
+    color: var(--blanco);
   }
 .olvidasteContraseña{
     text-decoration: underline;
@@ -3105,5 +3103,59 @@ background-color: #A12831;
     list-style: none;
     text-align: left;
    
+}
+
+/* Estilos del fondo del pop-up */
+.popup {
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+/*pop-up*/
+/* Estilos del contenido del pop-up */
+.popup-content {
+    background-color:black;
+    color: var(--blanco);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+.popup-message{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Ocultar el pop-up */
+.hidden {
+    display: none;
+}
+.diverror{
+    width: 500px;
+    height: 100px;
 }
 

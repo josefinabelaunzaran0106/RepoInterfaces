@@ -19,36 +19,44 @@ function verificarLogin(e) {
     let contraLogin = datos.get('password');
 
     let userLogin = {
-        name : "usuario",
+        name: "usuario",
         password: "1234"
     }
 
-    if(nombreLogin == userLogin.name && contraLogin == userLogin.password) {
+    if (nombreLogin == userLogin.name && contraLogin == userLogin.password) {
         console.log("logueado correctamente");
-        registrocorrecto.classList.remove("hidden");
-        registrocorrecto.classList.add("pulse");
-        setTimeout ("redireccionar()", 3000);
-    }
-    
-    else if(nombreLogin == "" && contraLogin == "") {
-        console.log("nombre y contraseña vacios");
-
-        iconoerror.classList.remove("icoerrorhidden");
-        iconoerror.classList.add("icoformerrorvis");
-      
+        mostrarPopup("Logueado correctamente");
+        setTimeout("redireccionar()", 3000);
     }
 
-    else if(nombreLogin == "") {
-        console.log("nombre vacio");
+    else if (nombreLogin != userLogin.name && contraLogin == userLogin.password) {
+        console.log("nombre incorrecto");
+        mostrarPopup("nombre incorrecto");
+
     }
-    else if(contraLogin == "") {
-        console.log("contraseña vacia");
+    else if (nombreLogin == userLogin.name && contraLogin != userLogin.password) {
+        console.log("nombre incorrecto");
+        mostrarPopup("contraseña incorrecta");
+
     }
     else {
         console.log("incorrecto");
+        mostrarPopup("nombre y contraseña incorrecta");
     }
 }
+function mostrarPopup(mensaje) {
+    // Busca el elemento donde irá el mensaje y actualiza su contenido
+    document.getElementById("popup-message").textContent = mensaje;
 
-function redireccionar(){
-    window.location="home.html";
- }
+    // Muestra el pop-up quitando la clase "hidden"
+    document.getElementById("popup-error").classList.remove("hidden");
+}
+
+// Ocultar el pop-up cuando se hace clic en el botón de cerrar
+document.getElementById("close-btn").addEventListener("click", function () {
+    document.getElementById("popup-error").classList.add("hidden");
+});
+
+function redireccionar() {
+    window.location = "home.html";
+}

@@ -13,10 +13,9 @@ form.addEventListener('submit', registrar);
 
 let usuarios = [];
 
-function registrar(e){ //paso x parametros el evento de submit}
+function registrar(e) { //paso x parametros el evento de submit}
 
     e.preventDefault();
-
     let datos = new FormData(formregister);
     let name = datos.get('fname');
     let surname = datos.get('lastname');
@@ -24,7 +23,7 @@ function registrar(e){ //paso x parametros el evento de submit}
     let age = datos.get('edad');
     let email = datos.get('mail');
     let pass = datos.get('contraseña');
-    let pass2 = datos.get('repetircontraseña');
+    let pass2 = datos.get('password2');
 
     let user = {
         "fnombre": name,
@@ -34,61 +33,65 @@ function registrar(e){ //paso x parametros el evento de submit}
         "mail": email,
         "contraseña": pass
     }
-    if ((pass == pass2) && (!estaRegistrado(user)) && captchacompletado){
+    if ((pass == pass2) && (!estaRegistrado(user)) && captchacompletado) {
         usuarios.push(user);
-        registrocorrecto.classList.remove("hidden");
-        registrocorrecto.classList.add("pulse");
-
-       setTimeout ("redireccionar()", 3000);
+        mostrarPopup("Se ha registrado con exito");
+        setTimeout("redireccionar()", 3000);
     }
-    else {  
-        if (estaRegistrado(user)){
+    else {
+        if (estaRegistrado(user)) {
             diverror.innerHTML = " ";
             diverror.classList.add("diverrorvisible");
             registrocorrecto.classList.remove("pulse");
-            diverror.innerHTML += "Ya tienes una cuenta registrada"
+            mostrarPopup("El usuario ya existe");
         }
         else {
             passerror.innerHTML = " ";
-            passerror.classList.remove("errorcontrahidden");
-            passerror.classList.add("diverrorcontraflex");
-            iconoerror.classList.remove("icoerrorhidden");
-            iconoerror.classList.add("icoformerrorvis");
-            inputerror.classList.add("errorinput");
-            labelerror.classList.add("errorred");
-            passerror.innerHTML += "Las contraseñas no coinciden";
+            mostrarPopup("Las contraseñas no coinciden");
         }
     }
 }
+function mostrarPopup(mensaje) {
+    // Busca el elemento donde irá el mensaje y actualiza su contenido
+    document.getElementById("popup-message").textContent = mensaje;
 
-function redireccionar(){
-   window.location="home.html";
+    // Muestra el pop-up quitando la clase "hidden"
+    document.getElementById("popup-error").classList.remove("hidden");
 }
 
-function estaRegistrado(user){
-        let registrado = false;
-        if (usuarios.length>0){
-            let i = 0;
-            while ( i < usuarios.length && !registrado){
-                if (usuarios[i].nombre == user.nombre && usuarios[i].email == user.email){
-                    registrado = true;
-                }
+// Ocultar el pop-up cuando se hace clic en el botón de cerrar
+document.getElementById("close-btn").addEventListener("click", function () {
+    document.getElementById("popup-error").classList.add("hidden");
+});
+function redireccionar() {
+    window.location = "home.html";
+}
+
+function estaRegistrado(user) {
+    let registrado = false;
+    if (usuarios.length > 0) {
+        let i = 0;
+        while (i < usuarios.length && !registrado) {
+            if (usuarios[i].nombre == user.nombre && usuarios[i].email == user.email) {
+                registrado = true;
             }
         }
-        return registrado;
+    }
+    return registrado;
 }
 
 let captcha = document.querySelector("#captcharectangulo");
 captcha.addEventListener('click', captchacompletado);
 let completo = false;
 
-function captchacompletado (){
+function captchacompletado() {
     let img = captcha.firstChild; // toma la imagen que esta del boton capthca
     img.classList.remove('icoerrorhidden');
     img.classList.add('tickvisible');
     completo = true;
     return completo
 }
+
 
 
 
