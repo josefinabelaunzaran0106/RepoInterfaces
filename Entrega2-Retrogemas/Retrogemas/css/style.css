@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@100&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -55,6 +58,9 @@ button {
     width: 80%;
     height: 50%;
 }
+.hamburguer-menu{
+    width: 15%;
+}
 
 .hamburguer-menu button{
     margin-left: 1em;
@@ -63,11 +69,15 @@ button {
 }
 
 #imgburguer {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
 }
-.logoastrojuegos{
-    
+.logoretrogemas{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.imglogoretrogemas{
     width: 40%;
     display: flex;
     align-items: center;
@@ -83,13 +93,15 @@ button {
 }
 
 .iconosnav{
-    width: 30%;
+    width: 20%;
     display: flex;
     align-items: center;
+    padding-right: 1em;
+    padding-left: 0.5em;
 }
 
 .buscarnav{
-    width: 30%;
+    width: 0%;
     display: flex;
     align-items: center;
     text-align: right;
@@ -99,9 +111,7 @@ button {
     width: 100%;
     display: flex;
     width: 75%;
-      
 }
-
 
 .carritoDesplegado{
     padding: 0.1em;
@@ -109,6 +119,7 @@ button {
     height: auto;
     background-color: var(--prim-sombra3);
     position: absolute;
+    
     top: 7.5%;
     display: flex;
     z-index: 3;
@@ -122,9 +133,10 @@ button {
 
 .carrito button {
 
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     border: 0;
+    justify-content: right;
 }
 
 
@@ -136,12 +148,11 @@ button {
     width: 50%;
     height: 50%;
     text-align: right;
-    
 }
 
 .perfil button{
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 9em;
     margin-right: 0.8em;
     border: 0;
@@ -164,7 +175,6 @@ button {
 
 .footerhome button {
     text-align: left;
-    margin: 1em 0 1.5em 1.2em;
     display: flex;
     align-items: center;
     border: 0;
@@ -175,19 +185,30 @@ button {
 }
 
 /* desplegables footer */
+.btnfooter button li{
+    font-size: 8px;
+    color: var(--blanco);
+}
+.btnfooter{
+    font-size: 8px;
+    color: var(--blanco);
+}
 .footerulhidden {
     display: none;
 }
-
+.footerulhidden li a{
+    font-size: 8px;
+    color: var(--blanco);
+    text-decoration: none;
+}
 .footerhome div ul {
     display: none;
 }
-
 .footerhome div ul.show {
     display: block;
-    font-size: 0.7em;
+    color: var(--blanco);
+    font-size: 8px;
     margin-left: 1.5em;
-    margin-bottom: 2em;
     list-style: none;
 }
 
@@ -197,6 +218,7 @@ button {
 
 .footerhome div ul li {
     margin-bottom: 0.5em;
+    color: var(--blanco);
 }
 
 
@@ -217,7 +239,8 @@ button {
     border-radius: 0.2em;
     justify-content: center;
 }
-.main {
+main {
+    width:100%;
     height: 100%;
     overflow: hidden; 
     background-color: #261818;
@@ -240,7 +263,7 @@ button {
 .imgcardsresponsive {
     margin: 0.25em; 
     width: 5.25em;
-    height: 5em;
+    height: 6em;
 }
 .carrusel {
     display: flex;
@@ -266,6 +289,9 @@ button {
     margin-left: 1.50em;
     margin-top: 0.50em;
     margin-bottom: 0.50em;
+}
+.h2 h2 {
+    font-size:10px;
 }
 .h3 {
     font-size: 10px;
@@ -299,6 +325,7 @@ button {
 
 .añadiralcarro p, .añadiralcarro button {
     margin-left: 0.50em;
+    font-size: 8px;
 }
 
 .jugar button, .btnañadiralcarro, .btnsacardelcarro {
@@ -315,6 +342,9 @@ button {
 }
 .btnsacardelcarro{
     width: 6.8em;
+}
+.sacardelcarro button{
+    font-size: 8px;
 }
 
 .hidden {
@@ -365,6 +395,9 @@ button {
     background-color: #374957;
     margin-right: 1em;
 }
+.gratis p{
+    font-size: 8px;
+}
 
 .jugargratis {
     display: flex;
@@ -372,6 +405,10 @@ button {
     justify-content: center;
     margin-top: 0.5em;
 }
+.jugar p{
+   font-size: 8px;
+}
+
 
 
 /*  Seccion Formulario Registro */
@@ -394,6 +431,7 @@ button a {
 }
 
 
+
 .btn-google-container img {
     margin-right: 0.5em;
 }
@@ -410,6 +448,8 @@ button a {
     width: 25.65em;
     height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-left: 1em;
 }
@@ -550,9 +590,10 @@ color: 000;
     display: flex;
     width: 270px;
     height:54px;
-    background-color: var(--acento);
+    background-color: var(--acento-luz);
     border-radius: 0.5em;
 }
+
 .btn-captcha-container button {
     background-color:white;
     margin-left: 3em;
@@ -568,9 +609,10 @@ a.colorblanco{
 .btn-registrarse-container button {
     width: 9.9375rem;
     height: 2.8125rem;
-    background-color: var(--acento--);
+    background-color: var(--acento-luz);
     border: 0;
 }
+
 
 .h4 {
     font-size: 10px;
@@ -630,7 +672,7 @@ a.colorblanco{
     background-color: #271010;  /* Variable: acento v3*/
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
 }
 
 .sub-container {
@@ -722,6 +764,8 @@ a.colorblanco{
 .game-container {
     margin-top: 0.7em;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 li:hover {
@@ -733,16 +777,23 @@ li:hover {
 }
 
 .juegoColocado {
-    
-    width: 100%;
-    height: 50%;
+    width: 60%;
+    height: 350px;
     display: flex;
-    justify-content: center;
     padding-bottom: 10px;
-    
+}
+.publicidad{
+    width: 30%;
+    height: 350px;
+    display: flex;
+    padding-bottom: 10px;
 }
 
-
+.publicidad-img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
 
 .game-container img {
     width: 100%;
@@ -773,7 +824,7 @@ li:hover {
     list-style-position: inside;
     display: inline-block;
     width: 100%;
-    font-size: 1.125em;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -783,9 +834,8 @@ li:hover {
 
 .deQueTrata h3 {
     font-family: Roboto;
-    font-size: 2rem;
+    font-size: 8px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     color: white;
 }
@@ -844,9 +894,8 @@ li:hover {
 }
 
 .imgsRedes img {
-    width: 45%;
-    height: 5em;
-    
+    width: 30%;
+    height: 3em;   
 }
 
 .links {
@@ -862,12 +911,16 @@ li:hover {
 
 .listaLinks {
     width: 100%;
-      
-
+}
+.listaLinks li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--blanco);
 }
 
+
 .community-section {
-    height: 72.4em;
+    height: 65em;
 }
 
 .lineacomentarios {
@@ -880,10 +933,6 @@ li:hover {
     width: 100%;
     display: flex;
     justify-content:left;
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    margin-top: 1.5em;
-    
 }
 
 .ult-coment-titulo h2 {
@@ -900,9 +949,8 @@ li:hover {
     width: auto;
     justify-content: space-between;
     align-items: center;
+    padding-top: 4%;
 }
-
-
 
 .dejaTuComentario {
     display: flex;
@@ -952,6 +1000,8 @@ li:hover {
 
 .inputReseña {
     margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .inputReseña input {
@@ -989,9 +1039,10 @@ li:hover {
 
 .btn-comment {
     display: flex;
-    justify-content: center;
+    justify-content:right;
     margin-top: 0.5em;
     margin-bottom: 2.1em;
+    padding-right: 2%;
 }
 
 .btn-comment button {
@@ -1031,7 +1082,7 @@ li:hover {
 
 .inputReseña {
     width: 100%;
-    height: 8.89863rem;
+    height: 12rem;
     background-color: rgba(57, 49, 49, 1);
     margin-top: 1em;
     display: flex;
@@ -1139,23 +1190,6 @@ li:hover {
     padding: 2%;
 }
 
-.publicidad {
-    width: 50%;
-    height: 38.8em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.publicidad img:first-child {
-    width:  75%;
-    height: 12.67575rem;
-}
-
-.publicidad img:last-child {
-    width:  75%;
-    height: 26.1875rem;
-}
 
 /* Menus compartir y ayuda desplegables */
 
@@ -1369,7 +1403,6 @@ li:hover {
     color: var(--blanco);
 }
 
-
 /* loader */
 
 .all {
@@ -1381,8 +1414,11 @@ li:hover {
 }
 
 #percentage {
+    display: flex;
     color: var(--blanco);
-    
+    font-size: 24px;
+    margin-top: 10px;
+    justify-content: center;
 }
 
 .loader {
@@ -1392,63 +1428,34 @@ li:hover {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #271010;
-    transition: visibility 5s; /*tarda 5 segundos*/
-
-
-}
-
-.loader-hidden {
-    visibility: hidden;  
-}
-
-.loader div {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #271010; /* Asegúrate de que el color cubra toda la pantalla */
+    transition: visibility 5s;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
 }
 
-.spinner {
+.loader-hidden {
+    visibility: hidden;
+}
+
+.progress-bar-container {
     position: relative;
-    width: 6.6em;
-    height: 6.6em;
-    margin-bottom: 0.5em; /* separar un poco el spinner y el porcentaje de carga */
+    width: 500px;
+    height: 40px;
+    background-color: var(--acento);
+    overflow: hidden;
+    margin-top: 1em;
 }
 
-.spinner-circle {
-    width: 100%;
+.progress-bar {
+    width: 0; /* Comienza desde 0% */
     height: 100%;
-    border: 1em solid #F5FBFF;
-    border-top-color: var(--prim);
-    border-radius: 50%;
-    animation: loading 0.75s ease infinite;
+    background-color: var(--acento-luz);
+    transition: width 0.1s ease;
+    transform-origin: left; /* Asegura que la animación comience desde la izquierda */
 }
-
-@keyframes loading {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transition: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.image {
-    max-width: 100%;
-    height: auto;
-    display: none;
-    transition: opacity 1s ease;
-}
-
-.image:first-child {
-    display: block;
-} 
 
 /* DESPLEGABLES */
 
@@ -1462,9 +1469,9 @@ li:hover {
       padding: 0.1em;
       width: auto;
       height: auto;
-      background-color: var(--prim-sombra3);
+      background-color: rgba(57, 49, 49, 1);
       position: absolute;
-      top: 7.5%;
+      top: 3.5rem;
       display: flex;
       z-index: 3;
       color: var(--blanco);
@@ -1478,7 +1485,7 @@ li:hover {
 .carritoDesplegado.show {
 
     /* left: 15.8em; */
-    right: 15%;
+    right: 8%;
 } 
 
 
@@ -1489,17 +1496,24 @@ li:hover {
 
 
 .perfilDesplegado.show ul, .carritoDesplegado.show ul, .hamburguer-menu-desplegado.show ul {
-    font-size: small;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    font-size: 8px;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
     padding-left: 0.5em;
     list-style: none;
 }
 
-.perfilDesplegado.show ul a, .carritoDesplegado.show ul a, .hamburguer-menu-desplegado.show ul a {
+.perfilDesplegado.show li, .carritoDesplegado.show li , .hamburguer-menu-desplegado.show li {
+    text-decoration: none;
+    color: var(--blanco);
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+.perfilDesplegado.show li a {
     text-decoration: none;
     color: var(--blanco);
 }
+
 
 .perfilDesplegado.show ul a:hover, .carritoDesplegado.show ul a:hover, .hamburguer-menu-desplegado.show ul a:hover {
     text-decoration: none;
@@ -1690,8 +1704,6 @@ li:hover {
 /* cuarto hover boton */
 
 .cuarto-hover-boton {
-
-
     border-radius: 3px; /* redondear bordes */
     position: relative;
     z-index: 1;
@@ -1699,17 +1711,17 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    font-size: 8px;
+}
 
-  .cuarto-hover-boton:hover {
+.cuarto-hover-boton:hover {
     color: #fff;/* color de fuente hover */
-  }
+}
 .cuarto-hover-boton::after {
     content: "";
     background: var(--acento-luz); /* color de fondo hover */
     position: absolute;
     z-index: -1;
-
     display: block;
     left: 0;
     right: 0;
@@ -1728,7 +1740,7 @@ li:hover {
 
   .container-carousel {
     position: relative;
-    width: auto;
+    width: 100%;
     height: 15em;
     background-color:#261818;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
@@ -1739,11 +1751,10 @@ li:hover {
     width: 1000%;
     height: 100%;
     display: flex;
-
 }
 
 .slider-section {
-    width: calc(100% / 3);
+    width: calc(100%/4);
     height: 100%;
 }
 
@@ -1772,29 +1783,24 @@ li:hover {
 
 
 .btn-left img {
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
 }
 
 .btn-right img {
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
 }
 
 .btn-left {
     left: 0.1em;
-
 }
 
 .btn-right {
     right: 0.1em;
 }
-
-
-
-
-
-
 
 /* carrusel cards celular*/
 
@@ -1802,8 +1808,9 @@ li:hover {
     margin-left: 0.50em;
     height: auto;
 }
-
-
+.jugar a {
+   font-size: 8px;
+}
 
 .carruselprincipal {
     display: flex;
@@ -1829,25 +1836,27 @@ li:hover {
     position: absolute;
     z-index: 100;
     left: 0em;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
 }
 
 .btn-right-cards{
     position: absolute;
     z-index: 100;
     right: 1em;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
 }
 
 
 .btn-left-cards img {
     width: 100%;
+    border-radius: 50%;
 }
 
 .btn-right-cards img{
    width: 100%;
+   border-radius: 50%;
 }
 
 
@@ -1876,12 +1885,12 @@ li:hover {
 .transformacion-izquierda {
     transform: translateX(0%) skew(-5deg);
     transition: transform 0.5s ease;
-  }
+}
   
-  .transformacion-derecha {
+.transformacion-derecha {
     transform: translateX(-100%) skew(5deg);
     transition: transform 0.5s ease;
-  }
+}
   
   .transformacion-reset {
     transform: translateX(0%) skewX(0deg);
@@ -1894,15 +1903,8 @@ li:hover {
   }
 
 
-
-
-
-
-
 @media only screen and (min-width: 1024px) {
     
-
-
 /* carrusel cards */
 
 .card h3 {
@@ -1919,9 +1921,6 @@ li:hover {
     margin-top: 1em;
     margin-bottom: 1.6em;
 }
-
-
-
 .cincocards {
     display: flex;
     width: 100%;
@@ -2019,21 +2018,23 @@ li:hover {
 label {
     color: var(--blanco);
 }
+.slider-section  {
+    width: calc(100%/4);
+    height: 100%;
+}
 
 .slider-section img {
-    width: 85.5em;
-    height: 20em;
-    object-fit: fill;
+    width: 50%;
+    height: 30em;
+    object-fit: cover;
 }
 
 .btn-left {
     left: 0.3em;
-
 }
 
 .btn-right {
     right: 0.3em;
-  
 }
 
 .btn-left img {
@@ -2045,8 +2046,6 @@ label {
     width: 3em;
     height: 3em;
 }
-
-
 
 /* main */
 
@@ -2094,16 +2093,19 @@ label {
 .slider img {
     width: 100%;
 }
+.carruseles{
+    height: 100%;
+    display: flex;
+}
 
 /* menus desplegados desktop */
 .perfilDesplegado.show {
     width: 10em;
-    height: 18em;
+    height: 16em;
     position: absolute;
-    top: 11.5%;
+    top:  4.8125rem;
     /* left: 21.7em; */
     display: flex;
-    right: 0.8%;
     padding: 0.5em 0.5em 2.5em 1.5em;
     text-align: left;
     align-items: center;
@@ -2113,8 +2115,7 @@ label {
 } 
 
 .perfilDesplegado.show ul li {
-    font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -2129,16 +2130,14 @@ label {
     
 }
 
-
-
 .carritoDesplegado.show {
     opacity: 0.9;
-    width: 9.05906rem;
-    height: 8rem;
+    width: 8.5rem;
+    height: 7rem;
     position: absolute;
-    top: 11.5%;
+    top:  4.8125rem;
     /* right: 10%; */
-    right: 10%;
+    right: 8%;
     display: flex;
     font-size: medium;
     padding: 0.5em 0.5em 0.5em 0.8em;
@@ -2148,8 +2147,7 @@ label {
 } 
 
 .carritoDesplegado.show ul li {
-    font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -2160,21 +2158,20 @@ label {
 
 .hamburguer-menu-desplegado.show {
 
-    width: 15em;
-    height: 22em;
+    width: 7em;
+    height: 15em;
     background-color: rgba(57, 49, 49, 1);;
     position: absolute;
-    top: 11.5%;
+    top:  4.8125rem;
     left: 0;
     display: flex;
-    justify-content: center;
+    justify-content:left;
     align-items: center;
     z-index: 3;
 }
 
 .hamburguer-menu-desplegado.show ul li {
-    font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -2223,7 +2220,7 @@ button {
     margin-left: 1.5em;
     border: 0;
 }
-.logoastrojuegos{
+.logoretrogemas{
     width: 40%;
     display: flex;
     justify-content: left;
@@ -2281,21 +2278,16 @@ button {
     height: 3em;
 }
 
-.perfil {
-    width: auto;
-    
-}
-
 .perfil button{
     width: 4rem;
     height: 3.6875rem;
     border-radius: 9em;
-    margin-left: 6.5em; /* mover carrito */
+    margin-left: 3.5em; /* mover carrito */
     margin-right: 0.5em;
     border: 0;
 }
 .perfil button img {
-    width: 100%;
+    width: 70%;
 }
 /*footer responsive*/
 
@@ -2654,7 +2646,7 @@ button {
 .register{
     background-image: url(../asset/images/fondo.png);
     background-size:cover;
-    width: 1440px;
+    width: auto;
     height: 832px;
     display: flex;
     padding-top: 5%;
@@ -3105,3 +3097,13 @@ background-color: #A12831;
     padding-left:8px;
     padding-bottom: 30px;   
 }
+.links {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--blanco);
+    list-style: none;
+    text-align: left;
+   
+}
+

@@ -2,36 +2,36 @@
 
 window.addEventListener("load", function() {
     const percentageElement = document.querySelector('#percentage');
-const progressBar = document.querySelector('#progress-bar');
-
-// Inicializa el porcentaje en 1%
-let percentage = 1;
-
-// Función para actualizar el porcentaje en el DOM
-function updatePercentage() {
-    percentageElement.textContent = `${percentage}%`;
-    progressBar.style.width = `${percentage}%`;
-
-    // Si el porcentaje no ha llegado al 100%, incrementa en 1 después de un breve retraso
-    if (percentage < 100) {
-        percentage++;
-        setTimeout(updatePercentage, 40); // Actualiza cada 40 milisegundos (ajusta según tus necesidades)
-    }
-}
-    // Comienza el proceso de carga
-    updatePercentage();
-
+    const progressBar = document.querySelector('.progress-bar');
     const loader = document.querySelector(".loader");
     const content = document.querySelector(".all");
 
-    loader.classList.add("loader-hidden");
+    // Inicializa el porcentaje en 0%
+    let percentage = 0;
+
+    // Función para actualizar el porcentaje en el DOM
+    function updatePercentage() {
+        percentageElement.textContent = `${percentage}%`;
+        progressBar.style.width = `${percentage}%`;
+
+        // Si el porcentaje no ha llegado al 100%, incrementa en 1 después de un breve retraso
+        if (percentage < 100) {
+            percentage++;
+            setTimeout(updatePercentage, 40); // Actualiza cada 40 milisegundos
+        } else {
+            // Oculta el preloader cuando llega al 100%
+            loader.classList.add("loader-hidden");
+        }
+    }
+
+    // Comienza el proceso de carga
+    updatePercentage();
 
     loader.addEventListener("transitionend", function() {
-        content.classList.add("show"); //carga todo el contenido
-        this.remove(); //borra el div loader
- }); 
-}); 
-
+        content.classList.add("show"); // Carga todo el contenido
+        this.remove(); // Borra el div loader
+    });
+});
 //nav section
 let botonesFooter = document.querySelectorAll("#footer-btn");
 
