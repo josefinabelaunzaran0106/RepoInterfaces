@@ -1753,15 +1753,23 @@ li:hover {
 
 
 .btn-left img {
-    width: 1em;
-    height: 1em;
+    width: 0.5em;
+    height: 0.5em;
     border-radius: 50%;
+    
 }
 
 .btn-right img {
-    width: 1em;
-    height: 1em;
+    width: 0.5em;
+    height: 0.5em;
     border-radius: 50%;
+}
+.btn-left img:hover {
+    opacity: 70%;
+}
+
+.btn-right img:hover {
+    opacity:70%;
 }
 
 .btn-left {
@@ -1828,11 +1836,17 @@ li:hover {
     width: 100%;
     border-radius: 50%;
 }
+.btn-left-cards img :hover{
+   opacity: 70%;
+}
 
 .btn-right-cards img{
    width: 100%;
    border-radius: 50%;
 }
+.btn-right-cards img :hover{
+    opacity: 70%;
+ }
 
 
 /* botones posicion */
@@ -1929,13 +1943,21 @@ li:hover {
 }
 
 
+.btn-right-cards img {
+    width: 100%;
+    opacity:30%;
+}
 .btn-left-cards img {
+    opacity:30%;
     width: 100%;
 }
 
-.btn-right-cards img{
-   width: 100%;
+.btn-right-cards img:hover{
+    opacity: 70%;
 }
+.btn-left-cards img:hover{
+    opacity: 70%;
+ }
 
 
 /* botones posicion */
@@ -2021,13 +2043,15 @@ label {
 }
 
 .btn-left img {
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
+    opacity:30%;
 }
 
 .btn-right img {
-    width: 3em;
-    height: 3em;
+    width: 2em;
+    height: 2em;
+    opacity: 30%;
 }
 
 
